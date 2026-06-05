@@ -1,0 +1,63 @@
+{
+  "products": [
+    {
+      "id": "p1",
+      "name": "Arc Wireless Keyboard",
+      "description": "A ultra-slim 75% mechanical keyboard with per-key RGB lighting.",
+      "price": 189,
+      "originalPrice": 229,
+      "category": "Tech",
+      "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=800&q=80"
+      ],
+      "rating": 4.8,
+      "reviews": 312,
+      "inStock": true,
+      "badge": "Sale",
+      "tags": [
+        "keyboard",
+        "mechanical"
+      ]
+    },
+    {
+      "id": "p5",
+      "name": "Obsidian ANC Headphones",
+      "description": "Over-ear headphones with hybrid Active Noise Cancellation.",
+      "price": 349,
+      "category": "Audio",
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80"
+      ],
+      "rating": 4.9,
+      "reviews": 876,
+      "inStock": true,
+      "badge": "Hot",
+      "tags": [
+        "headphones",
+        "anc"
+      ]
+    },
+    {
+      "id": "p8",
+      "name": "Stealth Zip Hoodie",
+      "description": "Heavyweight 500gsm French terry cotton zip-up hoodie.",
+      "price": 119,
+      "category": "Apparel",
+      "image": "https://images.unsplash.com/photo-1556821840-3a63f15732ce?w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1556821840-3a63f15732ce?w=800&q=80"
+      ],
+      "rating": 4.8,
+      "reviews": 412,
+      "inStock": true,
+      "badge": "Hot",
+      "tags": [
+        "hoodie",
+        "apparel"
+      ]
+    }
+  ],
+  "orders": []
+}
