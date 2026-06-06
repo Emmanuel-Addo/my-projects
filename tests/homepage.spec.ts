@@ -39,4 +39,5 @@ test.describe("Home Page", () => {
         await nav.getByRole("link", { name: "Account", exact: true }).click();
         await expect(page).toHaveURL(/\/account/);
     });
+    
 });
