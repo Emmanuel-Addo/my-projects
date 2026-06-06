@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FutureShop
 
-## Getting Started
+FutureShop is a modern e-commerce storefront built with Next.js and Tailwind CSS. It combines a polished shopping experience with an admin dashboard prototype and lightweight local data persistence for products and orders.
 
-First, run the development server:
+## Project Idea
+
+This project showcases a premium online store for curated tech, apparel, audio, home, and sport products.
+
+Key experience areas include:
+
+- Product browsing and discovery with categories, trending items, and new arrivals.
+- Search, filter, and sort functionality for product listings.
+- Product cards with rating, pricing, badges, and quick add-to-cart.
+- Cart drawer experience using React context.
+- Wishlist and account navigation flows.
+- Checkout page and order submission backed by a local JSON data file.
+- Admin dashboard and management pages for products, orders, customers, and site settings.
+
+## Features
+
+- Responsive storefront design with a dark premium visual style.
+- Home page with hero slider, marquee, featured collections, and banners.
+- Category-based shopping, search, and sorting options.
+- Product detail and cart interactions.
+- Client-side cart state using `CartContext`.
+- Local data storage in `data.json` seeded from `lib/db.ts`.
+- API routes for products, orders, wishlist, and admin stats.
+- Admin pages under `app/admin` for overview, customers, orders, products, and settings.
+
+## Tech Stack
+
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS v4
+- Local JSON data persistence
+
+## Run Locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000` in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev` - Start the development server.
+- `npm run build` - Build the production app.
+- `npm run start` - Start the production server.
+- `npm run lint` - Run ESLint.
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+- `app/` - Main application pages and routes.
+  - `app/page.tsx` - Home page.
+  - `app/products/` - Product listing and filtering.
+  - `app/wishlist/`, `app/cart/`, `app/checkout/`, `app/account/` - shopping flows.
+  - `app/admin/` - Dashboard and admin sections.
+- `components/` - UI components like `Navbar`, `ProductCard`, `HeroSlider`, `CartDrawer`, and filters.
+- `context/CartContext.tsx` - Cart management state.
+- `lib/db.ts` - Data helpers for products and orders.
+- `lib/types.ts` - Shared TypeScript interfaces.
+- `data.json` - Local seed data file for products and orders.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Notes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This repository is built as a demo storefront and admin experience rather than a fully production-ready shop. It is a strong base for learning Next.js app routing, server/client components, and state management across a shopping experience.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+It is also being used to learn and work with Playwright tests, GitHub Actions for CI/CD, and Docker for containerized workflows.
