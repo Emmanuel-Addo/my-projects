@@ -39,5 +39,10 @@ test.describe("Home Page", () => {
         await nav.getByRole("link", { name: "Account", exact: true }).click();
         await expect(page).toHaveURL(/\/account/);
     });
-    
+
+    //hero slider tests
+    test("should see the hero slider", async ({ page }) => {
+        const heroSlider = page.getByRole("region", { name: "Hero Slider" });
+        await expect(heroSlider).toBeVisible();
+    });
 });
